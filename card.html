@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Card Form</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="card">
+        <div class="container">
+            <div class="flex justify-end">
+                <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="title">
+                <h1 class="text-xl my-4">Contact us</h1>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <p class="text-base mb-4">We'd love to hear from you.<br />Please drop your name, email and message.</p>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+                <input type="submit" value="Submit"/>
+            </form>
+            <div id="socials" class="space-x-8 my-8">
+                <a href="linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="discord.com"><i class="fa-brands fa-discord"></i></a>
+            </div>
+            <div class="my-4">
+                <p>Go back to our courses...</p>
+                <ul>
+                    <a><li>Course 1</li></a>
+                    <a><li>Course 2</li></a>
+                    <a><li>Course 3</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
